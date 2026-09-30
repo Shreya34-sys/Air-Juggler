@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Air Juggler</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="topbar">
+    <h1> Air Juggler</h1>
+    <p>Catch the falling objects with your hand!</p>
+  </header>
+
+  <main class="game-container">
+
+    <section class="game-area">
+      <canvas id="gameCanvas"></canvas>
+
+      <div class="game-overlay">
+        <div>
+          <span>Score</span>
+          <strong id="score">0</strong>
+        </div>
+
+        <div>
+          <span>Lives</span>
+          <strong id="lives">❤️❤️❤️</strong>
+        </div>
+
+        <div>
+          <span>Time</span>
+          <strong id="timer">60</strong>
+        </div>
+      </div>
+    </section>
+
+    <aside class="control-panel">
+
+      <div class="camera-box">
+        <video id="webcam" autoplay playsinline></video>
+        <div class="camera-status">● Camera Ready</div>
+      </div>
+
+      <div class="tracking-status">
+        <span class="status-dot"></span>
+        <span>Hand Tracking Ready</span>
+      </div>
+
+      <button id="startBtn">Start Game</button>
+
+      <div class="instructions">
+        <h2>How to Play</h2>
+        <p>🖐️ Move your hand in front of the camera.</p>
+        <p>🎯 Move the catcher to the falling objects.</p>
+        <p>⭐ Catch objects to increase your score.</p>
+        <p>❤️ Don't let too many objects fall!</p>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
